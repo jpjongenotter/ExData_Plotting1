@@ -22,7 +22,7 @@ create_png4 <- function() {
         with(power_consumption, plot(Sub_metering_1, type = "l", col = "black", ylab = "Energy sub metering", xlab = "", xaxt = "n"))
         with(power_consumption, points(Sub_metering_2, type = "l", col = "red"))  
         with(power_consumption, points(Sub_metering_3, type = "l", col = "blue"))
-        legend("topright", pch = NA, lty = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+        legend("topright", pch = NA, lty = 1, col = c("black", "red", "blue"), bty = "n", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
         axis(1, at = c(1, 1441, 2880), labels = c("Thu", "Fri", "Sat"))
         
         with(power_consumption, plot(Global_reactive_power, type = "l", xlab = "datetime", xaxt = "n"))
